@@ -12,7 +12,6 @@
             <h1>SizeSearch</h1>
             <p class="subtitle">Instantly find your perfect outfit size.</p>
 
-            <!-- Form that sends data to Flask -->
             <form method="POST" class="form">
                 <div class="field">
                     <label for="age">Age (years)</label>
@@ -32,12 +31,12 @@
                 <button type="submit" class="btn">Predict Size</button>
             </form>
 
-            <!-- Error from Flask -->
+            
             {% if error %}
                 <p class="error">{{ error }}</p>
             {% endif %}
 
-            <!-- Result from Flask -->
+            
             {% if result %}
                 <div class="result-box">
                     <p>{{ result }}</p>
@@ -48,3 +47,4 @@
     </div>
 </body>
 </html>
+
