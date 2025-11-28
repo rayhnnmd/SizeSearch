@@ -10,5 +10,6 @@ def predict_size(weight, age, height):
     label = model.predict(x)[0]
     return label_map[label]
 
-# Example
+# For an example
 print(predict_size(78, 19, 180))
+
